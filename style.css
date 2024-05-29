@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+}
+body{
+    padding: 50px;
+}
+.result-sheet{
+    width: 400px;
+}
+.mark-row{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.button-container{
+    display: flex;
+    justify-content: end;
+    padding-top: 10px;
+}
