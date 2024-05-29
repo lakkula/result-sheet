@@ -11,17 +11,22 @@
         <h3>Result Sheet</h3>
     </div>
     <div class="button-container">
-        <button>Add New Subject</button>
+        <button onclick="createMarkRow()">Add New Subject</button>
     </div>
-    <div class="mark-row">
-        <input type="text" placeholder="Subject Name">
-        <input type="number" placeholder="Mark">
-        <p>N/A</p>
+    <div id="mark-row-container">
+        <div class="mark-row">
+            <input type="text" placeholder="Subject Name">
+            <input type="number" placeholder="Mark">
+            <p>N/A</p>
+        </div>
+        <div class="mark-row">
+            <input type="text" placeholder="Subject Name">
+            <input type="number" placeholder="Mark">
+            <p>N/A</p>
+        </div>
+    
     </div>
-    <div class="mark-row">
-        <input type="text" placeholder="Subject Name">
-        <input type="number" placeholder="Mark">
-        <p>N/A</p>
-    </div>
+    <script src="script.js"></script>
+
 </body>
 </html>
