@@ -37,3 +37,16 @@ function updateGrade(input){
         grade.innerText = 'F';
     }
 }
+
+function calculateAverage(){
+    let markInputes = document.querySelectorAll('.mark-row input[type="number"]');
+    
+    let totalMarks = 0;
+
+    markInputes.forEach(function (input){
+        totalMarks += parseInt(input.value);
+    });
+
+    let average = totalMarks / markInputes.length;
+    document.getElementById('average').innerText = "Average Marks: " + average + "%";
+}
