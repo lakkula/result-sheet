@@ -15,7 +15,13 @@ function createMarkRow(){
     let grade = document.createElement('p');
     grade.innerText = 'N/A';
 
-    markRow.append(subjectInput, markInput, grade);
+    let deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+    deleteButton.addEventListener('click', function(){
+        markRow.remove();
+    });
+
+    markRow.append(subjectInput, markInput, grade, deleteButton);
 
     let markRowContainer = document.getElementById('mark-row-container');
     markRowContainer.appendChild(markRow);
