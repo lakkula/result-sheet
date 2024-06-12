@@ -6,8 +6,12 @@ body{
     justify-content: center;
     padding: 50px;
 }
+
+h3{
+    text-align: center;
+}
 .result-sheet{
-    width: 400px;
+    width: 600px;
     border: 1px solid black;
     border-radius: 10px;
     padding: 20px;
@@ -32,4 +36,19 @@ body{
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
+}
+
+#delete-button{
+    border-color: rgb(223, 148, 148);
+    cursor: pointer;
+}
+
+#add-button{
+    border-color: rgb(152, 152, 206);
+    cursor: pointer;
+}
+
+#average-button{
+    border-color: rgb(99, 136, 99);
+    cursor: pointer;
 }

@@ -17,6 +17,7 @@ function createMarkRow(){
 
     let deleteButton = document.createElement('button');
     deleteButton.textContent = 'Delete';
+    deleteButton.id = 'delete-button';
     deleteButton.addEventListener('click', function(){
         markRow.remove();
     });
